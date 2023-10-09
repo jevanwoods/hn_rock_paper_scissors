@@ -69,9 +69,11 @@ function playRound() {
 }
 
 function game() {
-  playRound();
-  playRound();
-  playRound();
-  playRound();
-  playRound();
+  if (playerScore == 5) {
+    console.log("You win the game! Congratulations! You're the best!");
+  } else if (computerScore == 5) {
+    console.log("You lost! Oh man, how embarassing for you!");
+  } else {
+    console.log("Keep going");
+  }
 }
