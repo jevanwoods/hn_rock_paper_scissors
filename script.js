@@ -3,6 +3,9 @@ console.log("hello");
 let playerChoice;
 let computerChoice;
 
+let playerScore = 0;
+let computerScore = 0;
+
 function selectRock() {
   playerChoice = "Rock";
   console.log("You chose " + playerChoice);
@@ -39,18 +42,36 @@ function computerSelection() {
 function playRound() {
   computerSelection();
   if (playerChoice == computerChoice) {
+    playerScore += 0;
+    computerScore += 0;
     console.log("Tie!");
   } else if (playerChoice == "Rock" && computerChoice == "Scissors") {
+    playerScore += 1;
     console.log("You win! Rock beats scissors!");
   } else if (playerChoice == "Rock" && computerChoice == "Paper") {
+    computerScore += 1;
     console.log("You lose! Paper beats rock!");
   } else if (playerChoice == "Paper" && computerChoice == "Rock") {
+    playerScore += 1;
     console.log("You win! Paper beats rock!")
   } else if (playerChoice == "Paper" && computerChoice == "Scissors") {
+    computerScore += 1;
     console.log("You lose! Scissors beat paper!")
   } else if (playerChoice == "Scissors" && computerChoice == "Paper") {
+    playerScore += 1;
     console.log("You win! Scissors beat paper!");
   } else if (playerChoice == "Scissors" && computerChoice == "Rock") {
+    computerScore += 1;
     console.log("You lose! Rock beats scissors!");
   }
+  console.log("You have " + playerScore + " points. The Computer has " + computerScore + " points.")
+  return [playerScore, computerScore];
+}
+
+function game() {
+  playRound();
+  playRound();
+  playRound();
+  playRound();
+  playRound();
 }
