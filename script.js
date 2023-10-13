@@ -71,8 +71,12 @@ function playRound() {
 function game() {
   if (playerScore == 5) {
     console.log("You win the game! Congratulations! You're the best!");
+    playerScore = 0;
+    computerScore = 0;
   } else if (computerScore == 5) {
     console.log("You lost! Oh man, how embarassing for you!");
+    playerScore = 0;
+    computerScore = 0;
   } else {
     console.log("Keep going");
   }
