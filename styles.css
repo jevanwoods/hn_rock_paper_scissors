@@ -8,6 +8,10 @@
 }
 
 .playerBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 400px;
     height: 400px;
 }
@@ -16,4 +20,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.resultsBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
