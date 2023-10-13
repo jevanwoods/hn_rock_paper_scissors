@@ -8,18 +8,21 @@ let computerScore = 0;
 
 function selectRock() {
   playerChoice = "Rock";
+  document.getElementById("playerMessageBox").innerHTML = "You chose Rock.";
   console.log("You chose " + playerChoice);
   return playerChoice;
 }
 
 function selectPaper() {
   playerChoice = "Paper";
+  document.getElementById("playerMessageBox").innerHTML = "You chose Paper.";
   console.log("You chose " + playerChoice);
   return playerChoice;
 }
 
 function selectScissors() {
   playerChoice = "Scissors";
+  document.getElementById("playerMessageBox").innerHTML = "You chose Scissors.";
   console.log("You chose " + playerChoice);
   return playerChoice;
 }
@@ -35,7 +38,7 @@ function computerSelection() {
   } else {
     computerChoice = "Something went wrong";
   }
-  console.log("The Computer chose " + computerChoice);
+  document.getElementById("computerMessageBox").innerHTML = "The Computer chose " + computerChoice;
   return computerChoice;
 }
 
@@ -64,6 +67,8 @@ function playRound() {
     computerScore += 1;
     console.log("You lose! Rock beats scissors!");
   }
+  document.getElementById("playerScoreBox").innerHTML = playerScore;
+  document.getElementById("computerScoreBox").innerHTML = computerScore;
   console.log("You have " + playerScore + " points. The Computer has " + computerScore + " points.")
   return [playerScore, computerScore];
 }

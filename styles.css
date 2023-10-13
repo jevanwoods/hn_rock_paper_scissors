@@ -1,3 +1,19 @@
 * {
     background-color: lightsteelblue;
 }
+
+.gameBox {
+    display: flex;
+    justify-content: center;
+}
+
+.playerBox {
+    width: 400px;
+    height: 400px;
+}
+
+.buttonBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
