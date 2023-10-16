@@ -1,5 +1,12 @@
 * {
-    background-color: lightsteelblue;
+    margin: 0px;
+}
+
+.titleBox {
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+    padding: 50px;
 }
 
 .gameBox {
@@ -7,7 +14,18 @@
     justify-content: center;
 }
 
+button {
+    padding: 10px;
+    margin: 10px;
+}
+
+img {
+    height: 50px;
+    width: auto;
+}
+
 .playerBox {
+    border: solid 1px red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,11 +36,13 @@
 
 .buttonBox {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .resultsBox {
+    border: solid 1px black;
     display: flex;
     flex-direction: column;
     justify-content: center;

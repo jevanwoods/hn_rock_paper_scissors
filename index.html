@@ -8,6 +8,9 @@
     <script src="./script.js"></script>
 </head>
 <body>
+    <div class="titleBox">
+        <h1 class="title">Rock, Paper, Scissors</h1>
+    </div>
     <div class="gameBox">
         <div class="playerBox">
             <div id="playerMessageBox">
@@ -19,9 +22,9 @@
             </div>
         </div>
         <div class="buttonBox">
-            <button class="rock" onclick="selectRock(), playRound(), game()"><img src="./imgs/rock.png" alt="A Rock"></button>
-            <button class="paper" onclick="selectPaper(), playRound(), game()"><img src="./imgs/paper.png" alt="A Piece of Paper"></button>
-            <button class="scissors" onclick="selectScissors(), playRound(), game()"><img src="./imgs/scissors.png" alt=""></button>
+            <button class="gameButton, rock" onclick="selectRock(), playRound(), game()"><img src="./imgs/rock.png" alt="A Rock"></button>
+            <button class="gameButton, paper" onclick="selectPaper(), playRound(), game()"><img src="./imgs/paper.png" alt="A Piece of Paper"></button>
+            <button class="gameButton, scissors" onclick="selectScissors(), playRound(), game()"><img src="./imgs/scissors.png" alt=""></button>
         </div>
         <div class="playerBox">
             <div id="computerMessageBox">
